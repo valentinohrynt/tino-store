@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
+    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tino Store</title>
+    <meta name="description" content="Toko ANB Srono - Pusat bahan kue dan plastik terlengkap dan terjangkau di Srono, Banyuwangi, Jawa Timur. Temukan berbagai produk berkualitas untuk kebutuhan kue dan plastik Anda. Belanja sekarang untuk pengalaman belanja yang praktis dan ekonomis.">
+
+    <title>Aneka Baru Srono</title>
 
     <!-- Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -15,6 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
@@ -22,7 +31,7 @@
   <body>
     <!-- Navbar start -->
     <nav class="navbar">
-      <a href="#" class="navbar-logo">Tino<span>Store</span>.</a>
+      <a href="#" class="navbar-logo"><span>Aneka Baru Srono</span></a>
 
       <div class="navbar-nav">
         <a href="#home">Home</a>
@@ -32,8 +41,6 @@
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="cart"><i data-feather="shopping-bag"></i></a>
         <a href="#" id="menu"><i data-feather="menu"></i></a>
       </div>
     </nav>
@@ -43,11 +50,10 @@
     <section class="hero" id="home">
       <main class="content">
         <h1>
-          Solusi Top Up Mobile Legends <span>Murah</span> dan
-          <span>Terpercaya</span>
+          TOKO PLASTIK DAN BAHAN KUE <span>TERLENGKAP</span> DAN
+          <span>MURAH</span> DI SRONO
         </h1>
-        <p>TinoStore!</p>
-        <a href="#product" class="cta">Top Up Sekarang!</a>
+        <a href="#contact" class="cta">Belanja di Toko Sekarang!</a>
       </main>
     </section>
     <!-- Hero Section end -->
@@ -55,18 +61,33 @@
     <!-- About Section start -->
     <section id="about" class="about">
       <h2><span>Tentang </span>Kami</h2>
-
       <div class="row">
         <div class="about-img">
-          <img src="img/tentang-kami-img.png" alt="Tentang Kami" />
+          <div class="slider-wrapper">
+            <ul class="slides-container" id="slides-container">
+              <li class="slide"><img src="img/carousel/img1.webp" alt="Slide 1"></li>
+              <li class="slide"><img src="img/carousel/img2.webp" alt="Slide 2"></li>
+              <li class="slide"><img src="img/carousel/img3.webp" alt="Slide 3"></li>
+              <li class="slide"><img src="img/carousel/img4.webp" alt="Slide 4"></li>
+              <li class="slide"><img src="img/carousel/img5.webp" alt="Slide 5"></li>
+              <li class="slide"><img src="img/carousel/img6.webp" alt="Slide 6"></li>
+              <li class="slide"><img src="img/carousel/img7.webp" alt="Slide 7"></li>
+              <li class="slide"><img src="img/carousel/img8.webp" alt="Slide 8"></li>
+              <li class="slide"><img src="img/carousel/img9.webp" alt="Slide 9"></li>
+            </ul>
+            <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+            <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+          </div>
         </div>
-        <div class="content">
-          <h3>Mengapa Top Up di TinoStore?</h3>
-          <p>
-            TinoStore memberikan layanan dengan kualitas terbaik
-            untuk para customer. Pelayanan yang cepat, aman, dan terpercaya
-            menjadi prinsip kami dalam melayani cutsomer.
-          </p>
+          <div class="content">
+            <h3>Toko Aneka Baru Srono (ANB Srono)</h3>
+            <p>
+              Toko ANB Srono merupakan salah satu toko bahan kue dan
+              plastik yang berdiri pada tahun 2010 di Srono, Banyuwangi, Jawa
+              Timur. Kami menyediakan berbagai macam kebutuhan untuk membuat kue
+              dan plastik, baik untuk pengemasan dan kebutuhan lainnya.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -75,65 +96,51 @@
     <!-- Product Section start -->
     <section id="product" class="product">
       <h2><span>Produk </span>Kami</h2>
-      <p>
-        TinoStore menjual berbagai kuantitas diamonds Mobile Legends,
-        Mulai dari yang kecil hingga yang besar!
-        Berikut adalah daftar produk kami
-      </p>
       <div class="row">
         <div class="product-card">
           <img
-            src="img/product/lowproduct-icon.png"
-            alt="3 Diamonds"
+            src="img/product/product-bahankue.webp"
+            alt="Bahan Kue"
             class="product-card-img"
           />
-          <h3 class="product-card-title">- 3 Diamonds -</h3>
-          <p class="product-card-price">Rp 3.500,-</p>
+          <h3 class="product-card-title">Bahan Kue</h3>
+          <p class="product-card-detail">-</p>
         </div>
         <div class="product-card">
           <img
-            src="img/product/mediumproduct-icon.png"
-            alt="59 Diamonds"
+            src="img/product/product-bahanminuman.webp"
+            alt="Bahan Minuman"
             class="product-card-img"
           />
-          <h3 class="product-card-title">- 59 Diamonds -</h3>
-          <p class="product-card-price">Rp 20.000,-</p>
+          <h3 class="product-card-title">Bahan Minuman</h3>
+          <p class="product-card-detail">-</p>
         </div>
         <div class="product-card">
           <img
-            src="img/product/bigproduct-icon.png"
-            alt="170 Diamonds"
+            src="img/product/product-bahanmasakan.webp"
+            alt="Bahan Masakan"
             class="product-card-img"
           />
-          <h3 class="product-card-title">- 170 Diamonds -</h3>
-          <p class="product-card-price">Rp 53.500,-</p>
+          <h3 class="product-card-title">Bahan Masakan</h3>
+          <p class="product-card-detail">-</p>
         </div>
         <div class="product-card">
           <img
-            src="img/product/superbigproduct-icon.png"
-            alt="568 Diamonds"
+            src="img/product/product-bumbudapur.webp"
+            alt="Plastik"
             class="product-card-img"
           />
-          <h3 class="product-card-title">- 568 Diamonds -</h3>
-          <p class="product-card-price">Rp 165.500,-</p>
+          <h3 class="product-card-title">Bumbu Dapur</h3>
+          <p class="product-card-detail">-</p>
         </div>
         <div class="product-card">
           <img
-            src="img/product/largeproduct-icon.png"
-            alt="2010 Diamonds"
+            src="img/product/product-plastik.webp"
+            alt="Plastik"
             class="product-card-img"
           />
-          <h3 class="product-card-title">- 2010 Diamonds -</h3>
-          <p class="product-card-price">Rp 535.000,-</p>
-        </div>
-        <div class="product-card">
-          <img
-            src="img/product/superlargeproduct-icon.png"
-            alt="4830 Diamonds"
-            class="product-card-img"
-          />
-          <h3 class="product-card-title">- 4830 Diamonds -</h3>
-          <p class="product-card-price">Rp 1.300.000,-</p>
+          <h3 class="product-card-title">Plastik</h3>
+          <p class="product-card-detail">KRESEK, HD, PE, PP, OPP, ROLL, STANDING POUCH, MIKA, PLASTIK WRAP, ALUMINIUM FOIL, THINWALL, RICE BOWL, CUP PLASTIK, CUP KERTAS, SEGALA MACAM KEMASAN MAKANAN DAN MINUMAN, DAN MASIH BANYAK LAGI!</p>
         </div>
       </div>
     </section>
@@ -143,24 +150,31 @@
     <section id="contact" class="contact">
       <h2><span>Kontak </span>Kami</h2>
       <p>
-        Hubungi kami dengan mengisi formulir di bawah
+        Belanja Sekarang atau Hubungi kami dengan langsung datang ke lokasi!
       </p>
       <div class="row">
-        <form action="">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.979173308778!2d114.25782917598431!3d-8.403705684808186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd3fdecf066aaf3%3A0x5cd27893b6bab759!2sToko%20Bahan%20Kue%20dan%20Plastik%20Aneka%20Baru!5e0!3m2!1sid!2sid!4v1702479806637!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="maps"
+        ></iframe>
+        <!-- <form action="">
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" placeholder="Name" />
-          </div>
-          <div class="input-group">
-            <i data-feather="mail"></i>
-            <input type="text" placeholder="Email" />
+            <input type="text" placeholder="Nama" />
           </div>
           <div class="input-group">
             <i data-feather="phone"></i>
-            <input type="text" placeholder="Phone" />
+            <input type="text" placeholder="Nomor HP" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="Masukkan pesan singkat!" />
           </div>
           <button type="submit" class="btn">Send Message</button>
-        </form>
+        </form> -->
       </div>
     </section>
     <!-- Contact Section end -->
@@ -179,7 +193,7 @@
         <a href="#contact">Kontak</a>
       </div>
       <div class="credit">
-        <p>Created by <a href="">Valentino Hariyanto</a> &copy; 2023.</p>
+        <p>Created by <a href="https://www.instagram.com/varuenta/">Valentino Hariyanto</a> &copy; 2023.</p>
       </div>
     </footer>
     <!-- Footer end -->
