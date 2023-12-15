@@ -44,3 +44,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   showSlide(currentIndex);
 });
+
+// Function to toggle dark mode
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
+
+// Check if user prefers dark mode
+if (
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: light)").matches
+) {
+  toggleDarkMode();
+}
